@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <!-- 定义一个动画帧，Drawable为img0，持续时间30毫秒 -->
+    <item
+        android:drawable="@mipmap/point_cycle_74"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_75"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_76"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_77"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_78"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_79"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_80"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_81"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_82"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_83"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_84"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_85"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_86"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_87"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_88"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_89"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_90"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_91"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_92"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_93"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_94"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_95"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_96"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_97"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_98"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_99"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_100"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_101"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_102"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_103"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_104"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_105"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_106"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_107"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_108"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_109"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_110"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_111"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_112"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_113"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_114"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_115"
+        android:duration="30" />
+    <item
+        android:drawable="@mipmap/point_cycle_116"
+        android:duration="30" />
+</animation-list>

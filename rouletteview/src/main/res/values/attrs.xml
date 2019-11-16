@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RouletteView">
+        <!-- 隐形圆环颜色-->
+        <attr name="ringColor" format="color" />
+        <!--  圆环半径-->
+        <attr name="ringWidth" format="dimension" />
+        <!--  小圆点颜色-->
+        <attr name="globuleColor" format="color" />
+        <!--  小圆点半径-->
+        <attr name="globuleRadius" format="dimension" />
+        <attr name="cycleTime" format="float" />
+        <!-- 计算点的密度-->
+        <attr name="density" format="integer" />
+        <!--  y 轴的压缩率 -->
+        <attr name="proportionY" format="float" />
+        <!--  x轴的压缩率 -->
+        <attr name="proportionX" format="float" />
+        <!--        是否可以触摸滑动-->
+        <attr name="isTouch" format="boolean" />
+        <attr name="reflectionDiance" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

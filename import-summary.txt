@@ -1,0 +1,78 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* DsvMusic.iml
+* extra\
+* extra\res\
+* extra\res\values\
+* extra\res\values\values.xml
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => dsvMusic\src\main\AndroidManifest.xml
+* assets\ => dsvMusic\src\main\assets\
+* libs\arm64-v8a\libtiff.so => dsvMusic\src\main\jniLibs\arm64-v8a\libtiff.so
+* libs\arm64-v8a\libtiffconverter.so => dsvMusic\src\main\jniLibs\arm64-v8a\libtiffconverter.so
+* libs\arm64-v8a\libtifffactory.so => dsvMusic\src\main\jniLibs\arm64-v8a\libtifffactory.so
+* libs\arm64-v8a\libtiffsaver.so => dsvMusic\src\main\jniLibs\arm64-v8a\libtiffsaver.so
+* libs\butterknife-5.1.1.jar => dsvMusic\libs\butterknife-5.1.1.jar
+* libs\LibTspBigDataPoint-1.0.jar => dsvMusic\libs\LibTspBigDataPoint-1.0.jar
+* libs\music.jar => dsvMusic\libs\music.jar
+* libs\Ultimate_Android_SDK_v2.1.156_DS_201901311645.jar => dsvMusic\libs\Ultimate_Android_SDK_v2.1.156_DS_201901311645.jar
+* res\ => dsvMusic\src\main\res\
+* src\ => dsvMusic\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="85px"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/statistics_date"
+            android:layout_width="214px"
+            android:layout_height="34px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="742px"
+            android:gravity="center_vertical|left"
+            android:text="titjjs"
+            android:textColor="#b3ffffff"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:id="@+id/statistics_avc"
+            android:layout_width="wrap_content"
+            android:layout_height="34px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="165px"
+            android:gravity="center_vertical|right"
+            android:text="fgggggf"
+            android:textColor="#b3ffffff"
+            android:textSize="24px" />
+
+        <com.archermind.demotest.view.BarChartView
+            android:id="@+id/month_chart"
+            android:layout_width="1012px"
+            android:layout_height="440px"/>
+        <com.archermind.demotest.view.BarChartView
+            android:id="@+id/year_chart"
+            android:layout_width="1012px"
+            android:visibility="gone"
+            android:layout_height="440px"/>
+
+
+        <LinearLayout
+            android:layout_width="400px"
+            android:layout_height="62px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="61px"
+           >
+
+            <TextView
+                android:id="@+id/month_data"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="本月"
+                android:background="@color/colorPrimary"
+                android:textColor="#b3ffffff"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/year_data"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="年"
+                android:background="@color/colorPrimary"
+                android:textColor="#b3ffffff"
+                android:textSize="28px" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

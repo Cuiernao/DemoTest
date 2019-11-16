@@ -1,0 +1,104 @@
+<resources>
+    <declare-styleable name="BallRotationAnim">
+        <!--球最大半径-->
+        <attr name="max_radius" format="dimension" />
+        <!--球最小半径-->
+        <attr name="min_radius" format="dimension" />
+        <!--第一个球颜色-->
+        <attr name="one_color" format="color" />
+        <!--第二个球颜色-->
+        <attr name="two_color" format="color" />
+        <!--两球之间间距-->
+        <attr name="distance" format="dimension" />
+        <!--动画执行时间-->
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="AccelerateCircularView">
+        <attr name="ringColor" format="color" />
+        <!--大圆半径-->
+        <attr name="ringWidth" format="dimension" />
+        <!--小圆颜色-->
+        <attr name="globuleColor" format="color" />
+        <attr name="globuleRadius" format="dimension" />
+        <!--旋转周期-->
+        <attr name="heightPercentage" format="float" />
+        <attr name="cycleTime" format="float" />
+    </declare-styleable>
+    <!--<declare-styleable name="WaveView">-->
+    <!--<attr name="ringColor" format="color" />-->
+    <!--&lt;!&ndash;大圆半径&ndash;&gt;-->
+    <!--<attr name="ringWidth" format="dimension" />-->
+    <!--&lt;!&ndash;小圆颜色&ndash;&gt;-->
+    <!--<attr name="globuleColor" format="color" />-->
+    <!--<attr name="globuleRadius" format="dimension" />-->
+    <!--&lt;!&ndash;旋转周期&ndash;&gt;-->
+    <!--<attr name="heightPercentage" format="float" />-->
+    <!--<attr name="cycleTime" format="float" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="LoadingView">
+        <!--矩形圆弧半径-->
+        <attr name="radius" format="dimension" />
+        <attr name="begin_color" format="color" />
+        <attr name="end_color" format="color" />
+        <!--底色颜色-->
+        <!--底色颜色-->
+        <attr name="bg_color" format="color" />
+        <!--当前进度 -->
+        <attr name="current_rate" format="integer" />
+        <!--最大值-->
+        <attr name="max_num" format="integer" />
+        <!--最小值-->
+        <attr name="min_num" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TabLayoutView">
+
+        <!--最小值-->
+        <attr name="flag" format="integer" />
+    </declare-styleable>
+    <attr name="startColor" format="color" />
+    <attr name="endColor" format="color" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="textColor" format="color" />
+
+    <declare-styleable name="GoodProgressView">
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="backgroundColor" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="barchar_style">
+        <attr name="barInterval" format="dimension" />
+        <attr name="bar_color" format="color" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="top_text_size" format="dimension" />
+        <attr name="top_text_color" format="color" />
+        <attr name="bottom_text_size" format="dimension" />
+        <attr name="bottom_text_color" format="color" />
+        <attr name="bottom_line_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="StackCardContainer">
+        <attr name="scc_padding" format="integer" />
+        <attr name="scc_edge" format="integer" />
+        <attr name="scc_min_change_distance" format="integer" />
+        <attr name="scc_anim_duration" format="integer" />
+        <attr name="scc_type" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--进度条-->
+    <declare-styleable name="ColorProgressBar">
+        <attr name="currentProcess" format="integer" />
+        <attr name="minProcess" format="integer" />
+        <attr name="maxProcess" format="integer" />
+        <!--进度条背景-->
+        <attr name="slideBackground" format="integer" />
+        <!--滑动图片-->
+        <attr name="slideImg" format="integer" />
+        <attr name="bgColor" format="color" />
+    </declare-styleable>
+</resources>

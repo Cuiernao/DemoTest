@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/btphone_2_bg">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/round"
+        android:tint="@color/color_tint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="224dp"
+        android:padding="20dp"
+        android:src="@mipmap/launcher_btn_otaupbtn_1_nor"
+        android:textColor="#fff"
+        android:textSize="@dimen/dp_40"
+        android:tint="@color/color_tint"
+        android:tintMode="src_atop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/show3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="224dp"
+        android:clickable="true"
+        android:padding="20dp"
+        android:src="@mipmap/control_icon_lock"
+        android:textColor="#fff"
+        android:textSize="@dimen/dp_40"
+        android:tint="@color/color_tint"
+        android:tintMode="src_atop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="20dp"
+        android:text="接通"
+        android:textSize="@dimen/dp_40"
+        app:layout_constraintStart_toStartOf="@+id/show"
+        custom:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/show2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="572dp"
+        android:padding="20dp"
+        android:text="挂断"
+        android:textSize="@dimen/dp_40"
+        app:layout_constraintStart_toStartOf="@+id/show1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/comingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/upImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/rotateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

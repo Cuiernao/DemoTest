@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="810px"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/contact_view1"
+        android:layout_width="202.5px"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/name_1_view"
+            android:layout_width="94px"
+            android:layout_height="94px"
+            android:layout_centerHorizontal="true"
+
+            android:backgroundTintMode="src_atop">
+
+            <ImageView
+                android:id="@+id/name_1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="94px"
+                android:src="@drawable/ic_attach_money_black_24dp" />
+
+            <TextView
+                android:id="@+id/head_name1"
+                android:layout_width="40px"
+                android:layout_height="70px"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#d9ffffff"
+
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_1_view"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="XXXX"
+            android:includeFontPadding="false"
+            android:textColor="#E6DB0E0E"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_view2"
+        android:layout_width="202.5px"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/name_2_view"
+            android:layout_width="94px"
+            android:layout_height="94px"
+            android:layout_centerHorizontal="true"
+            android:backgroundTintMode="src_atop">
+
+            <ImageView
+                android:id="@+id/name_2_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="94px"
+                android:src="@drawable/ic_attach_money_black_24dp" />
+
+            <TextView
+                android:id="@+id/head_name2"
+                android:layout_width="40px"
+                android:layout_height="70px"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#d9ffffff"
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/name_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_2_view"
+            android:layout_marginTop="10px"
+            android:text="XXXX"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#E6D81919"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_contacts"
+        android:layout_width="202.5px"
+        android:layout_height="match_parent"
+       >
+
+        <ImageView
+            android:id="@+id/more_img"
+            android:layout_width="wrap_content"
+            android:layout_height="94px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_attach_money_black_24dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/more_img"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:maxLines="1"
+            android:includeFontPadding="false"
+            android:text="更多"
+            android:textColor="#E6E40F0F"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt_dialer_sync"
+        android:layout_width="202.5px"
+        android:layout_height="match_parent"
+      >
+
+        <ImageView
+            android:id="@+id/dial_img"
+            android:layout_width="wrap_content"
+            android:layout_height="94px"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_attach_money_black_24dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dial_img"
+            android:layout_marginTop="10px"
+
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="拨号键盘"
+            android:includeFontPadding="false"
+            android:textColor="#E6EB0C0C"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+</LinearLayout>

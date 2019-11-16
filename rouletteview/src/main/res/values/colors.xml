@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="loadView_bg">#1f2a4a</color>
+    <color name="loadViewBegin_color">#2657A2</color>
+    <color name="loadViewEnd_color">#14079CEC</color>
+    <!--<color name="loadViewEnd_color">#b0963e</color>-->
+    <color name="transparent">#00000000</color>
+    <color name="ccddff">#973F51B5</color>
+    <color name="pointUp">#563AF3DD</color>
+    <color name="ccsddff">#FFFFFF</color>
+    <color name="white">#fff</color>
+
+    <color name="whiteColor_30">#4DFFFFFF</color>
+    <color name="whiteColor_15">#26FFFFFF</color>
+    <color name="whiteColor_10">#1AFFFFFF</color>
+    <color name="whiteColor_5">#0DFFFFFF</color>
+    <color name="whiteColor_11">#5918C0B2</color>
+    <color name="defaultColor">#5918C0B2</color>
+
+</resources>

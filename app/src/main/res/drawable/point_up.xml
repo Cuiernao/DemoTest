@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <!-- 定义一个动画帧，Drawable为img0，持续时间50毫秒 -->
+    <item
+        android:drawable="@mipmap/point_up_00"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_01"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_02"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_03"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_04"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_05"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_06"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_07"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_08"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_09"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_10"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_11"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_12"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_13"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_14"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_15"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_16"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_17"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_18"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_19"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_20"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_21"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_22"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_23"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_24"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_25"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_26"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_27"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_28"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_29"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_30"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_31"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_32"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_33"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_34"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_35"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_36"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_37"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_38"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_39"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_40"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_41"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_42"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_43"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_44"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_45"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_46"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_47"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_48"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_49"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_50"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_51"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_52"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_53"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_54"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_55"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_56"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_57"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_58"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_59"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_60"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_61"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_62"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_63"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_64"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_65"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_66"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_67"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_68"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_69"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_70"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_71"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_72"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/point_up_73"
+        android:duration="50" />
+</animation-list>
