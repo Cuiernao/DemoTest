@@ -5,9 +5,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -31,6 +29,7 @@ public class RouletteView extends View {
     private final float proportionY;
     private boolean isTouch;
     private Paint mPaint;
+    private ValueAnimator animator;
     /**
      * 点运动轨迹的圆半径
      */
@@ -72,9 +71,38 @@ public class RouletteView extends View {
         mDensity = attrsArray.getInteger(R.styleable.RouletteView_density, 60);
         proportionX = attrsArray.getFloat(R.styleable.RouletteView_proportionX, 1);
         proportionY = attrsArray.getFloat(R.styleable.RouletteView_proportionY, 0.17f);
-        isTouch=attrsArray.getBoolean(R.styleable.RouletteView_isTouch,true);
+        isTouch = attrsArray.getBoolean(R.styleable.RouletteView_isTouch, true);
         attrsArray.recycle();
+        initPaint();
+        initAnima();
+    }
+
+    /**
+     * 初始化动画
+     */
+    private void initAnima() {
+        animator = ValueAnimator.ofFloat(360f, 0f);//起始位置在最低点
+        animator.setDuration((long) mCycleTime).setRepeatCount(
+                ValueAnimator.INFINITE);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                Float angle = (Float) animation.getAnimatedValue();
+                currentRadian = angle * Math.PI / 180;
+                invalidate();
+            }
+        });
+        animator.setInterpolator(new LinearInterpolator());// 匀速旋转
+    }
+
+    /**
+     * 初始化小圆画笔
+     */
+    private void initPaint() {
         mPaint = new Paint();
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setAntiAlias(true);
+        mPaint.setColor(mGlobuleColor);
     }
 
     @Override
@@ -116,14 +144,7 @@ public class RouletteView extends View {
         if (mGlobuleRadius < mRingWidth / 2) {// 小球嵌在环里
             mRingRadius = central - mRingWidth / 2;
         }
-        mPaint.setStrokeWidth(mRingWidth);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setAntiAlias(true);
         //canvas.drawCircle(central, central, mRingRadius, mPaint);// 绘制圆环
-        mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setAntiAlias(true);
-        mPaint.setColor(mGlobuleColor);
-
         drawGlobule(canvas, central);// 绘制小球
 
     }
@@ -163,19 +184,19 @@ public class RouletteView extends View {
             //压缩y轴的比例
             float cy = (float) (central + mRingRadius * proportionY * Math.sin(currentRadian + offsetRadian));
             double litterRadius = mGlobuleRadius * Math.abs(Math.sin(currentRadian + offsetRadian));
-            float diance= (float) (reflectionDiance*(Math.abs(Math.sin(currentRadian + offsetRadian))));
+            float diance = (float) (reflectionDiance * (Math.abs(Math.sin(currentRadian + offsetRadian))));
             if (Math.sin(currentRadian + offsetRadian) < 0) {//上部分正常绘制
-                mPaint.setColor(getContext().getColor(R.color.whiteColor_30));
-                canvas.drawCircle(cx, cy, (float) litterRadius/2, mPaint);
+                mPaint.setAlpha(225 * 30 / 100);
+                canvas.drawCircle(cx, cy, (float) litterRadius / 2, mPaint);
                 //绘制上部阴影
-                mPaint.setColor(getContext().getColor(R.color.whiteColor_5));
-                canvas.drawCircle(cx, cy + reflectionDiance, (float) litterRadius/2, mPaint);
+                mPaint.setAlpha(225 * 5 / 100);
+                canvas.drawCircle(cx, cy + reflectionDiance, (float) litterRadius / 2, mPaint);
             } else {
                 if (i % 2 != 0) {//去掉下部范围内一半点
-                    mPaint.setColor(getContext().getColor(R.color.white));
+                    mPaint.setAlpha(225);
                     canvas.drawCircle(cx, cy, (float) litterRadius, mPaint);
                     //绘制底部阴影
-                    mPaint.setColor(getContext().getColor(R.color.whiteColor_15));
+                    mPaint.setAlpha(225 * 15 / 100);
                     canvas.drawCircle(cx, cy + reflectionDiance, (float) litterRadius, mPaint);
                 }
 
@@ -187,20 +208,17 @@ public class RouletteView extends View {
     /**
      * 旋转小球
      */
-    private void startCirMotion() {
-        ValueAnimator animator = ValueAnimator.ofFloat(360f, 0f);//起始位置在最低点
-        animator.setDuration((long) mCycleTime).setRepeatCount(
-                ValueAnimator.INFINITE);
-        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                Float angle = (Float) animation.getAnimatedValue();
-                currentRadian = angle * Math.PI / 180;
-                invalidate();
-            }
-        });
-        animator.setInterpolator(new LinearInterpolator());// 匀速旋转
-        animator.start();
+    public void startCirMotion() {
+        if (!animator.isRunning() || !animator.isStarted()) {
+            animator.start();
+        }
+    }
+
+    /**
+     * 停止转动
+     */
+    public void endCirMotion() {
+        animator.cancel();
     }
 
     float offSetX = 0;
